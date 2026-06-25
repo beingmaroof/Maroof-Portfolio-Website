@@ -181,7 +181,7 @@ Whenever changes are pushed to GitHub, Vercel automatically redeploys the latest
 
 **Name:** Maroof Ahmed
 
-**Email:** [your-email@example.com](mailto:your-maroofahmed.dev@gmail.com)
+**Email:** mailto:your-maroofahmed.dev@gmail.com
 
 **Location:** Delhi, India
 
