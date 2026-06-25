@@ -336,8 +336,8 @@
           <!-- Resume CTA -->
           <div style="margin-top: var(--space-6); display: flex; gap: var(--space-2); flex-wrap: wrap;" class="reveal"
             data-delay="5">
-            <a href="assets/resume/Maroof_Ahmed_Frontend_Developer_Resume.pdf" target="_blank" class="btn btn-primary"
-              aria-label="View Maroof Ahmed's resume PDF in a new tab">
+            <a href="assets/resume/Maroof_Ahmed_Frontend_Developer_Resume.pdf" target="_blank" class="btn btn-primary btn-resume" id="btn-view-resume"
+              aria-label="View Maroof Ahmed's resume inside the website">
               <i class="fa-regular fa-file-pdf" aria-hidden="true"></i>
               View Resume
             </a>
@@ -1010,7 +1010,7 @@
             <a href="mailto:maroofahmed.dev@gmail.com">Send Email</a>
             <a href="https://linkedin.com/in/beingmaroof" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="https://github.com/beingmaroof" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="assets/resume/Maroof_Ahmed_Resume.pdf" download>Resume PDF</a>
+            <a href="assets/resume/Maroof_Ahmed_Frontend_Developer_Resume.pdf" id="footer-resume-link">Resume PDF</a>
           </nav>
         </div>
 
@@ -1050,6 +1050,116 @@
 
   <!-- [CERT MODAL] Certificate preview lightbox -->
   <script src="js/cert-modal.js"></script>
+
+  <!-- ══════════════════════════════════════
+       RESUME MODAL
+  ══════════════════════════════════════ -->
+  <div id="resume-modal-overlay" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
+    <div id="resume-modal-container" role="document">
+      
+      <!-- Header -->
+      <div class="resume-modal-header">
+        <div class="resume-modal-title-area">
+          <h2 class="resume-modal-title">Curriculum Vitae</h2>
+          <span class="resume-modal-subtitle">Maroof Ahmed</span>
+        </div>
+        <div class="resume-modal-actions">
+          <a href="assets/resume/Maroof_Ahmed_Frontend_Developer_Resume.pdf" download="Maroof_Ahmed_Resume.pdf" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.8rem;" aria-label="Download resume PDF">
+            <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download
+          </a>
+          <button id="resume-modal-close" aria-label="Close resume viewer" type="button">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Body -->
+      <div class="resume-modal-body">
+        <!-- Desktop Iframe (loaded dynamically) -->
+        <iframe id="resume-iframe" class="resume-iframe" title="Maroof Ahmed Resume PDF" src=""></iframe>
+
+        <!-- Mobile Fallback Content -->
+        <div class="resume-mobile-fallback">
+          <div class="resume-fallback-hero">
+            <h1 class="resume-fallback-name">Maroof Ahmed</h1>
+            <p class="resume-fallback-role">Frontend Developer &amp; Web Engineer</p>
+            <p style="font-size: 0.85rem; color: var(--text-2); margin-top: 4px;">Delhi, India · maroofahmed.dev@gmail.com</p>
+          </div>
+
+          <div class="resume-fallback-section">
+            <h3 class="resume-fallback-sec-title">Work Experience</h3>
+            
+            <div class="resume-fallback-item">
+              <div class="resume-fallback-item-header">
+                <span class="resume-fallback-item-title">Frontend Developer Intern</span>
+                <span class="resume-fallback-item-meta">2026 — Present</span>
+              </div>
+              <span class="resume-fallback-item-sub">Decode Labs</span>
+              <p class="resume-fallback-item-desc">Building responsive, user-friendly interfaces. Turning designs into clean code using HTML, CSS, JS, and React.</p>
+            </div>
+
+            <div class="resume-fallback-item" style="margin-top: 12px;">
+              <div class="resume-fallback-item-header">
+                <span class="resume-fallback-item-title">Frontend Developer Intern</span>
+                <span class="resume-fallback-item-meta">2026 — Present</span>
+              </div>
+              <span class="resume-fallback-item-sub">Syntecxhub</span>
+              <p class="resume-fallback-item-desc">Collaborating with development teams on client web interfaces, maintaining responsive layouts, and improving code consistency.</p>
+            </div>
+          </div>
+
+          <div class="resume-fallback-section" style="margin-top: 12px;">
+            <h3 class="resume-fallback-sec-title">Selected Projects</h3>
+
+            <div class="resume-fallback-item">
+              <div class="resume-fallback-item-header">
+                <span class="resume-fallback-item-title">Pixen India Digital</span>
+                <span class="resume-fallback-item-meta">HTML, CSS, JS</span>
+              </div>
+              <p class="resume-fallback-item-desc">Developed the official dark-mode responsive brand website for a digital marketing agency.</p>
+            </div>
+
+            <div class="resume-fallback-item" style="margin-top: 8px;">
+              <div class="resume-fallback-item-header">
+                <span class="resume-fallback-item-title">Arvaux E-Commerce</span>
+                <span class="resume-fallback-item-meta">HTML, CSS, JS, Firebase</span>
+              </div>
+              <p class="resume-fallback-item-desc">Built e-commerce frontend with working cart state and Firebase authentication.</p>
+            </div>
+          </div>
+
+          <div class="resume-fallback-section" style="margin-top: 12px;">
+            <h3 class="resume-fallback-sec-title">Education</h3>
+            <div class="resume-fallback-item">
+              <div class="resume-fallback-item-header">
+                <span class="resume-fallback-item-title">BCA (Bachelor of Computer Applications)</span>
+                <span class="resume-fallback-item-meta">2024 — 2027</span>
+              </div>
+              <span class="resume-fallback-item-sub">Maharaja Surajmal Institute (GGSIPU)</span>
+              <p class="resume-fallback-item-desc">Current CGPA: 9.22 (Semester 3). Top 3 rank in Web Technologies class.</p>
+            </div>
+          </div>
+
+          <div class="resume-fallback-section" style="margin-top: 12px; margin-bottom: 24px;">
+            <h3 class="resume-fallback-sec-title">Key Skills</h3>
+            <div class="resume-fallback-skills-grid">
+              <span class="stack-tag">React</span>
+              <span class="stack-tag">Next.js</span>
+              <span class="stack-tag">TypeScript</span>
+              <span class="stack-tag">JavaScript</span>
+              <span class="stack-tag">CSS3 / Tailwind</span>
+              <span class="stack-tag">HTML5</span>
+              <span class="stack-tag">Git &amp; GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- [RESUME MODAL] Resume inline preview -->
+  <script src="js/resume-modal.js"></script>
 
 </body>
 
