@@ -13,7 +13,7 @@ The website focuses on clean design, responsive layouts, smooth interactions, an
 
 ## Live Demo
 
-**Portfolio:** https://beingmaroof.github.io/Maroof-Portfolio-Website/
+**Portfolio:** https://maroofahmedportfolio.vercel.app/
 
 ---
 
@@ -185,7 +185,7 @@ Whenever changes are pushed to GitHub, Vercel automatically redeploys the latest
 
 **Location:** Delhi, India
 
-**Portfolio:** https://your-portfolio.vercel.app
+**Portfolio:** https://maroofahmedportfolio.vercel.app/
 
 **GitHub:** https://github.com/beingmaroof
 
