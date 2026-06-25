@@ -1,4 +1,3 @@
-```markdown
 ![Status](https://img.shields.io/badge/Status-Live-success)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
@@ -214,6 +213,3 @@ The source code may be used for learning purposes. Personal information, brandin
 ---
 
 Developed and maintained by **Maroof Ahmed**.
-
-```
-```
