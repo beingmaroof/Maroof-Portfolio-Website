@@ -1,144 +1,219 @@
-# Maroof Ahmed — Personal Portfolio Website
+```markdown
+![Status](https://img.shields.io/badge/Status-Live-success)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
+![License](https://img.shields.io/badge/License-MIT-green)
+# Maroof Ahmed Portfolio
 
-A premium, recruiter-ready personal portfolio website built with vanilla HTML5, CSS3, and JavaScript. Inspired by Apple, Linear, Framer, Stripe, and Vercel design language.
+A personal portfolio website built using HTML, CSS, and JavaScript to showcase my projects, technical skills, internships, certifications, and academic achievements.
 
----
-
-## ✨ Features
-
-- **10 Complete Sections**: Hero, About, Skills, Projects, Certifications, Awards, Experience, Education, Contact, Footer
-- **Dark / Light Theme Toggle** with localStorage persistence
-- **GSAP Animations** — hero entrance, scroll-triggered reveals
-- **Typed.js Typewriter** — cycling role titles in hero
-- **AOS Scroll Reveal** — smooth section entrances
-- **Custom Cursor** with hover effects (desktop)
-- **Animated Stats Counter** — number count-up on scroll
-- **Skill Category Tabs** — filterable skill pills
-- **Fully Responsive** — mobile, tablet, desktop
-- **EmailJS Contact Form** — with real-time validation
-- **Resume Download Button**
-- **SEO Optimized** — title, meta, Open Graph, Twitter Card
-- **Accessible** — ARIA labels, focus rings, reduced motion support
+The website focuses on clean design, responsive layouts, smooth interactions, and performance while providing a simple way for recruiters and developers to explore my work.
 
 ---
 
-## 📁 Folder Structure
+## Live Demo
+
+**Portfolio:** https://beingmaroof.github.io/Maroof-Portfolio-Website/
+
+---
+
+## Features
+
+- Responsive design for desktop, tablet, and mobile
+- Dark and Light mode
+- Smooth GSAP animations
+- Scroll reveal animations (AOS)
+- Interactive typewriter hero section
+- Animated statistics counters
+- Filterable skills section
+- Professional project showcase
+- Internship and experience timeline
+- Certification gallery
+- Resume download
+- Contact form powered by EmailJS
+- SEO and social sharing optimized
+- Accessible and keyboard-friendly interface
+
+---
+
+## Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- GSAP
+- AOS
+- Typed.js
+- Font Awesome
+- EmailJS
+
+---
+
+## Featured Projects
+
+### Pixen India Digital
+Official website developed for Pixen India Digital, a digital marketing agency. Built as a real business website with responsive layouts, modern UI, and user-focused design.
+
+### Arvaux
+Luxury fashion e-commerce website featuring responsive design, product browsing, shopping cart, authentication, and checkout interface.
+
+### SnapList
+Task and shopping list application designed for organizing daily tasks with a clean interface and local data storage.
+
+---
+
+## Professional Experience
+
+### Frontend Development Intern
+**Syntecxhub**
+
+Working on frontend development using HTML, CSS, JavaScript, and modern development practices while contributing to real-world projects.
+
+### Frontend Development Intern
+**DecodeLlabs**
+
+Contributing to frontend development tasks, improving UI components, and building responsive web interfaces.
+
+---
+
+## Certifications
+
+- Google — Discover the Art of Prompting
+- Google — Maximize Productivity with AI Tools
+- IBM SkillsBuild — Getting Started with Artificial Intelligence
+- IBM Skills Network — Prompt Engineering for Everyone
+- IBM SkillsBuild — Summarizing Data Using IBM Granite
+- Anudip Foundation × EY — IT & Career Readiness
+
+---
+
+## Academic Highlights
+
+- Bachelor of Computer Applications (BCA)
+- Maharaja Surajmal Institute, GGSIPU
+- Delhi, India
+- Current CGPA: **9.22**
+- Recognized among the **Top 3 students in Web Technologies**
+- Certificate of Appreciation with **96/100** in Web Technologies
+
+---
+
+## Folder Structure
 
 ```
-Maroof Portfolio website/
-├── index.html                 # Main single-page HTML
+
+Portfolio/
+│
+├── index.html
+│
 ├── css/
-│   ├── style.css              # Design system + all section styles
-│   ├── animations.css         # Keyframes, hover effects, transitions
-│   └── responsive.css         # Mobile-first breakpoints
+│   ├── style.css
+│   ├── animations.css
+│   └── responsive.css
+│
 ├── js/
-│   ├── main.js                # Nav, theme, scroll, tabs, counters
-│   ├── animations.js          # GSAP, AOS, Typed.js, cursor
-│   └── contact.js             # EmailJS form integration
+│   ├── main.js
+│   ├── animations.js
+│   └── contact.js
+│
 ├── assets/
 │   ├── images/
-│   │   ├── profile.png        # Your profile photo
-│   │   ├── pixen-preview.png  # Pixen India Digital screenshot
-│   │   ├── arvaux-preview.png # Arvaux screenshot
-│   │   └── snaplist-preview.png # SnapList screenshot
 │   ├── resume/
-│   │   └── Maroof_Ahmed_Resume.pdf  ← Add your resume here
 │   └── favicon/
-│       └── favicon.svg        # MA monogram favicon
+│
 └── README.md
-```
+
+````
 
 ---
 
-## 🚀 Quick Start
+## Getting Started
 
-1. **Clone / Download** this project
-2. Open `index.html` in your browser — no build step needed!
+Clone the repository
 
-For a live reload during development:
 ```bash
-# Using VS Code Live Server extension (recommended)
-Right-click index.html → "Open with Live Server"
+git clone https://github.com/beingmaroof/portfolio.git
+````
 
-# Or using Python:
-python -m http.server 8000
-# Then open http://localhost:8000
+Open the project folder
+
+```bash
+cd portfolio
 ```
 
----
-
-## ⚙️ Personalization Checklist
-
-Before deploying, update these items:
-
-### 🔴 Required
-- [ ] **`assets/resume/Maroof_Ahmed_Resume.pdf`** — Drop your actual resume PDF here
-- [ ] **Email address** — Replace `maroofahmed@example.com` everywhere in `index.html`
-- [ ] **LinkedIn URL** — Replace `linkedin.com/in/maroofahmed` with your real URL
-- [ ] **GitHub URL** — Replace `github.com/maroofahmed` with your real URL
-- [ ] **Project GitHub links** — Update the `#` placeholder hrefs for Arvaux and SnapList
-- [ ] **Profile photo** — Replace `assets/images/profile.png` with your actual photo
-
-### 🟡 EmailJS Setup (Contact Form)
-1. Create a free account at [emailjs.com](https://www.emailjs.com)
-2. Add an Email Service (Gmail works great)
-3. Create a Template with variables: `{{from_name}}`, `{{from_email}}`, `{{subject}}`, `{{message}}`
-4. Open `js/contact.js` and replace:
-   ```js
-   publicKey:  'YOUR_EMAILJS_PUBLIC_KEY',
-   serviceId:  'YOUR_EMAILJS_SERVICE_ID',
-   templateId: 'YOUR_EMAILJS_TEMPLATE_ID',
-   ```
-
-### 🟢 Optional
-- [ ] **Profile photo** — Replace the AI-generated avatar with a real photo (same path)
-- [ ] **Arvaux live link** — Add live demo URL if deployed
-- [ ] **SnapList live link** — Add live demo URL if deployed
-- [ ] **Open Graph image** — Add an `assets/images/og-image.png` (1200×630px)
+Open `index.html` directly in your browser or use Live Server in Visual Studio Code.
 
 ---
 
-## 🌐 Deployment
+## Screenshots
 
-### GitHub Pages (Free)
-1. Push this folder to a GitHub repository
-2. Go to Repository → Settings → Pages
-3. Set Source to `main` branch, `/ (root)` folder
-4. Your site will be live at `https://yourusername.github.io/repo-name`
+### Home
 
-### Vercel (Recommended — Free)
-1. Push to GitHub
-2. Go to [vercel.com](https://vercel.com) → Import Project
-3. Select your repository → Deploy
-4. Get a free `.vercel.app` domain instantly
+![Home](assets/screenshots/home.png)
 
-### Netlify (Alternative — Free)
-1. Drag and drop this folder at [netlify.com/drop](https://app.netlify.com/drop)
-2. Get a live URL immediately
+### About
 
----
+![About](assets/screenshots/about.png)
 
-## 🛠️ Tech Stack
+### Projects
 
-| Technology     | Purpose                        |
-|---------------|-------------------------------|
-| HTML5          | Structure & semantics          |
-| CSS3           | Styling & design system        |
-| JavaScript ES6 | Interactivity & logic          |
-| GSAP 3         | Hero animations, scroll effects|
-| AOS            | Scroll-triggered reveals       |
-| Typed.js       | Typewriter effect              |
-| Font Awesome 6 | Icons                          |
-| EmailJS        | Contact form backend           |
-| Google Fonts   | Inter + JetBrains Mono         |
+![Projects](assets/screenshots/projects.png)
+
+### Experience
+
+![Experience](assets/screenshots/experience.png)
+
+### Contact
+
+![Contact](assets/screenshots/contact.png)
 
 ---
 
-## 📄 License
+## Deployment
 
-This portfolio is for personal use by **Maroof Ahmed**.  
-Feel free to use this as inspiration, but please don't copy it wholesale as your own portfolio.
+The website is deployed using **Vercel**.
+
+Whenever changes are pushed to GitHub, Vercel automatically redeploys the latest version.
 
 ---
 
-*Built with ♥ by Maroof Ahmed — 2025*
+## Contact
+
+**Name:** Maroof Ahmed
+
+**Email:** [your-email@example.com](mailto:your-maroofahmed.dev@gmail.com)
+
+**Location:** Delhi, India
+
+**Portfolio:** https://your-portfolio.vercel.app
+
+**GitHub:** https://github.com/beingmaroof
+
+**LinkedIn:** https://linkedin.com/in/beingmaroof
+
+---
+
+## Future Improvements
+
+* Blog section
+* Project case studies
+* Project filtering
+* Better accessibility
+* Performance improvements
+* More frontend and full-stack projects
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+The source code may be used for learning purposes. Personal information, branding, projects, images, and content belong to Maroof Ahmed.
+
+---
+
+Developed and maintained by **Maroof Ahmed**.
+
+```
+```
