@@ -1,0 +1,232 @@
+/* ============================================================
+   responsive.css — Mobile-first Responsive System
+   Maroof Ahmed Portfolio
+   ============================================================ */
+
+/* ── 1024px: Tablet ── */
+@media (max-width: 1024px) {
+  :root {
+    --section-py: 96px;
+  }
+
+  .container {
+    padding: 0 var(--space-5);
+  }
+
+  .nav-container {
+    padding: 0 var(--space-5);
+  }
+
+  /* About */
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .about-portrait-wrap {
+    max-width: 280px;
+  }
+
+  .stats-cluster {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Stack */
+  .stack-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  /* Experience */
+  .exp-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  /* Certs */
+  .certs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Edu */
+  .edu-awards-layout {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact */
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+
+  /* Projects */
+  .project-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .project-featured-content {
+    padding: var(--space-6);
+  }
+}
+
+/* ── 768px: Tablet small ── */
+@media (max-width: 768px) {
+  :root {
+    --section-py: 80px;
+    --nav-h: 60px;
+  }
+
+  /* Nav */
+  .nav-links {
+    display: none;
+  }
+
+  .nav-available {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero-headline {
+    font-size: clamp(2.25rem, 8vw, 4rem);
+  }
+
+  .hero-meta {
+    flex-direction: column;
+    gap: var(--space-5);
+  }
+
+  .hero-ctas {
+    width: 100%;
+  }
+
+  /* About */
+  .stats-cluster {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Projects */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Certs */
+  .certs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Footer */
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-1);
+    text-align: center;
+  }
+
+  /* Contact form row */
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── 480px: Mobile ── */
+@media (max-width: 480px) {
+  :root {
+    --section-py: 64px;
+  }
+
+  .container {
+    padding: 0 var(--space-4);
+  }
+
+  .nav-container {
+    padding: 0 var(--space-4);
+  }
+
+  /* Hero */
+  .hero-container {
+    padding: 0 var(--space-4);
+  }
+
+  .hero-headline {
+    font-size: clamp(1.85rem, 9vw, 3rem);
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-ctas .btn {
+    justify-content: center;
+  }
+
+  /* Stats */
+  .stats-cluster {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Certs */
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stack group */
+  .stack-group {
+    grid-template-columns: 1fr;
+  }
+
+  .group-label {
+    padding: var(--space-3) var(--space-4);
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .group-skills {
+    padding: var(--space-3) var(--space-4);
+  }
+
+  /* Edu */
+  .cgpa-row {
+    gap: var(--space-2);
+  }
+
+  /* Section heading */
+  .section-heading {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+  }
+
+  /* Toast */
+  .toast {
+    right: var(--space-3);
+    left: var(--space-3);
+    max-width: unset;
+  }
+}
+
+/* ── Print ── */
+@media print {
+  #navbar, .cursor-ring, .cursor-dot, .hero-grid,
+  .hero-vignette, .hero-scroll, #proof-strip { display: none; }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
