@@ -1,0 +1,27 @@
+{
+  "name": "maroof-portfolio-website",
+  "version": "1.0.0",
+  "description": "Maroof Ahmed's Portfolio Website - Frontend Developer & Web Engineer",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beingmaroof/Maroof-Portfolio-Website.git"
+  },
+  "keywords": [
+    "portfolio",
+    "frontend",
+    "developer",
+    "web-developer"
+  ],
+  "author": "Maroof Ahmed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beingmaroof/Maroof-Portfolio-Website/issues"
+  },
+  "homepage": "https://github.com/beingmaroof/Maroof-Portfolio-Website#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
